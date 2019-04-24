@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Petfinder!</title>
+
+    <!--Latest compiled and minified CSS-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"/>
+  </head>
+  <!--CITATION: https://jsfiddle.net/KyleMit/8vu8v/-->
+  <body>
+
+      <div class="container">
+          <div class="jumbotron">
+            <h1 class="text-center">
+              <span class="petfinder-fire"></span>Petfinder
+            </h1>
+            <hr/>
+            <h2>Find your ideal pet! Pet love connections here.</h2>
+            <br/>
+    
+            <div class="text-center">
+              <a href="/"><button type="button" class="btn btn-lg btn-primary">
+                  <span class="petfinder-list-alt"></span>Home
+                </button></a>
+                <table class="striped-columns border">
+                    <thead>
+                      <tr>
+                        <th>Question</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Is Enthusiastic?</td>
+                        <td><input type="radio" value="1" name="enthusiasm" /></td>
+                        <td><input type="radio" value="2" name="enthusiasm" /></td>
+                        <td><input type="radio" value="3" name="enthusiasm" /></td>
+                        <td><input type="radio" value="4" name="enthusiasm" /></td>
+                        <td><input type="radio" value="5" name="enthusiasm" /></td>
+                      </tr>
+                      <tr>
+                        <td>Is Knowledgeable?</td>
+                        <td><input type="radio" value="1" name="knowledgeable" /></td>
+                        <td><input type="radio" value="2" name="knowledgeable" /></td>
+                        <td><input type="radio" value="3" name="knowledgeable" /></td>
+                        <td><input type="radio" value="4" name="knowledgeable" /></td>
+                        <td><input type="radio" value="5" name="knowledgeable" /></td>
+                      </tr>
+                      <tr>
+                        <td>Is On Time?</td>
+                        <td><input type="radio" value="1" name="timeliness" /></td>
+                        <td><input type="radio" value="2" name="timeliness" /></td>
+                        <td><input type="radio" value="3" name="timeliness" /></td>
+                        <td><input type="radio" value="4" name="timeliness" /></td>
+                        <td><input type="radio" value="5" name="timeliness" /></td>
+                      </tr>
+                      <tr>
+                        <td>Helps Students?</td>
+                        <td><input type="radio" value="1" name="helpful" /></td>
+                        <td><input type="radio" value="2" name="helpful" /></td>
+                        <td><input type="radio" value="3" name="helpful" /></td>
+                        <td><input type="radio" value="4" name="helpful" /></td>
+                        <td><input type="radio" value="5" name="helpful" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+    
+          <footer class="footer">
+            <div class="container">
+              <p><a href="/api/pets">API Pets Link</a></p>
+            </div>
+          </footer>
+        </div>
+    
+  </body>
+</html>
