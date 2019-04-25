@@ -13,6 +13,7 @@ app.use(bodyParser.json())
 
 //require html files and pass in express
 require('./app/routing/htmlRoutes.js')(app);
+require('./app/routing/apiRoutes.js')(app);
 
 //moving this to the bottom
 app.listen(PORT, function(){

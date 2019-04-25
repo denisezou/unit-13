@@ -8,79 +8,197 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
       integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
   </head>
-  <!--CITATION: https://jsfiddle.net/KyleMit/8vu8v/-->
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">
+          <span class="petfinder-fire"></span>Petfinder
+        </h1>
+        <hr />
+        <h2>
+          Match with shelter pets that share your tendencies! *Pets had human
+          assistants complete survey for them.
+        </h2>
+        <br />
 
-      <div class="container">
-          <div class="jumbotron">
-            <h1 class="text-center">
-              <span class="petfinder-fire"></span>Petfinder
-            </h1>
-            <hr/>
-            <h2>Find your ideal pet! Pet love connections here.</h2>
-            <br/>
-    
-            <div class="text-center">
-              <a href="/"><button type="button" class="btn btn-lg btn-primary">
-                  <span class="petfinder-list-alt"></span>Home
-                </button></a>
-                <table class="striped-columns border">
-                    <thead>
-                      <tr>
-                        <th>Question</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Is Enthusiastic?</td>
-                        <td><input type="radio" value="1" name="enthusiasm" /></td>
-                        <td><input type="radio" value="2" name="enthusiasm" /></td>
-                        <td><input type="radio" value="3" name="enthusiasm" /></td>
-                        <td><input type="radio" value="4" name="enthusiasm" /></td>
-                        <td><input type="radio" value="5" name="enthusiasm" /></td>
-                      </tr>
-                      <tr>
-                        <td>Is Knowledgeable?</td>
-                        <td><input type="radio" value="1" name="knowledgeable" /></td>
-                        <td><input type="radio" value="2" name="knowledgeable" /></td>
-                        <td><input type="radio" value="3" name="knowledgeable" /></td>
-                        <td><input type="radio" value="4" name="knowledgeable" /></td>
-                        <td><input type="radio" value="5" name="knowledgeable" /></td>
-                      </tr>
-                      <tr>
-                        <td>Is On Time?</td>
-                        <td><input type="radio" value="1" name="timeliness" /></td>
-                        <td><input type="radio" value="2" name="timeliness" /></td>
-                        <td><input type="radio" value="3" name="timeliness" /></td>
-                        <td><input type="radio" value="4" name="timeliness" /></td>
-                        <td><input type="radio" value="5" name="timeliness" /></td>
-                      </tr>
-                      <tr>
-                        <td>Helps Students?</td>
-                        <td><input type="radio" value="1" name="helpful" /></td>
-                        <td><input type="radio" value="2" name="helpful" /></td>
-                        <td><input type="radio" value="3" name="helpful" /></td>
-                        <td><input type="radio" value="4" name="helpful" /></td>
-                        <td><input type="radio" value="5" name="helpful" /></td>
-                      </tr>
-                    </tbody>
-                  </table>
+        <div class="text-center">
+          <a href="/"
+            ><button type="button" class="btn btn-lg btn-primary">
+              <span class="petfinder-list-alt"></span>Home
+            </button></a
+          >
+          <form>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+              />
             </div>
-          </div>
-    
-          <footer class="footer">
-            <div class="container">
-              <p><a href="/api/pets">API Pets Link</a></p>
+            <br />
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="photo"
+                placeholder="Photo URL"
+              />
             </div>
-          </footer>
+
+            <h3><strong>1.</strong></h3>
+            <h4>I am...</h4>
+            <select class="chosen-select" id="NUMBER1">
+              <option value=""></option>
+              <option value="1">1 (Calm)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Enthusiastic)</option>
+            </select>
+
+            <h3><strong>2.</strong></h3>
+            <h4>I love...</h4>
+            <select class="chosen-select" id="NUMBER2">
+              <option value=""></option>
+              <option value="1">1 (Independence)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Companionship)</option>
+            </select>
+            <h3><strong>3.</strong></h3>
+            <h4>I prefer...</h4>
+            <select class="chosen-select" id="NUMBER3">
+              <option value=""></option>
+              <option value="1">1 (To lie down)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (To run and jump)</option>
+            </select>
+            <h3><strong>4.</strong></h3>
+            <h4>I identify as a...</h4>
+            <select class="chosen-select" id="NUMBER4">
+              <option value=""></option>
+              <option value="1">1 (Morning lover)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Night owl)</option>
+            </select>
+            <h3><strong>5.</strong></h3>
+            <h4>When there's thunder, I tend to...</h4>
+            <select class="chosen-select" id="NUMBER5">
+              <option value=""></option>
+              <option value="1">1 (Hide)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Bark)</option>
+            </select>
+            <h3><strong>6.</strong></h3>
+            <h4>If given the choice, I would...</h4>
+            <select class="chosen-select" id="NUMBER6">
+              <option value=""></option>
+              <option value="1">1 (Sniff the butt)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (NOT sniff the butt)</option>
+            </select>
+            <h3><strong>7.</strong></h3>
+            <h4>People would describe me as...</h4>
+            <select class="chosen-select" id="NUMBER7">
+              <option value=""></option>
+              <option value="1">1 (Having refined palate)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (A living garbage can)</option>
+            </select>
+            <h3><strong>8.</strong></h3>
+            <h4>People would describe me as...</h4>
+            <select class="chosen-select" id="NUMBER8">
+              <option value=""></option>
+              <option value="1">1 (Hard to get to know)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Wearing my heart on my sleeve)</option>
+            </select>
+            <h3><strong>9.</strong></h3>
+            <h4>When there are babies in the house, I...</h4>
+            <select class="chosen-select" id="NUMBER9">
+              <option value=""></option>
+              <option value="1">1 (Love them)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Hate them)</option>
+            </select>
+            <h3><strong>10.</strong></h3>
+            <h4>When I see a huge body of water...</h4>
+            <select class="chosen-select" id="NUMBER10">
+              <option value=""></option>
+              <option value="1">1 (I stick my tail between my legs)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (I jump in)</option>
+            </select>
+          </form>
         </div>
-    
+        <button type="button" class="btn btn-lg btn-primary" id="submit">
+          Submit
+        </button>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <p><a href="/api/pets">API Pets Link</a></p>
+          <div id="namehere"></div>
+          <div id="photohere"></div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $("#submit").on("click", function() {
+        var newSurvey = {
+          name: $("#name")
+            .val()
+            .trim(),
+          photo: $("#photo")
+            .val()
+            .trim(),
+          scores: [
+            $("#NUMBER1").val(),
+            $("#NUMBER2").val(),
+            $("#NUMBER3").val(),
+            $("#NUMBER4").val(),
+            $("#NUMBER5").val(),
+            $("#NUMBER6").val(),
+            $("#NUMBER7").val(),
+            $("#NUMBER8").val(),
+            $("#NUMBER9").val(),
+            $("#NUMBER10").val()
+          ]
+        };
+let currentURL = window.location.origin;
+
+$.post(currentURL + "/api/pets", newSurvey, function(response){
+
+  $("#namehere").text(response.name);
+  $("#photohere").attr("src", response.photo);
+});
+
+        console.log(newSurvey);
+      });
+    </script>
   </body>
 </html>

@@ -37,5 +37,30 @@
         </div>
       </footer>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function runQuery() {
+        var currentURL = window.location.origin;
+        $.ajax({ url: currentURL + "/api/pets", method: "GET" }).done(function(
+          petsData
+        ) {
+          console.log("-------------");
+          console.log("URL: " + currentURL + "/api/pets");
+          console.log("-------------");
+          console.log(petsData);
+          console.log("-------------");
+
+          for (var i = 0; i < petsData.length; i++) {
+            
+            
+            console.log(petsData[i]);
+
+
+          }
+        });
+      }
+      runQuery();
+    </script>
   </body>
 </html>
